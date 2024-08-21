@@ -8,7 +8,7 @@ export default function Home() {
       <div className={styles.main}>
         <div className={styles.skullOverlay}></div>
         <div className={classNames(keepOnTruckin.className, styles.hero)}>
-          <h1>My Choir Rocks</h1>
+          <h1>My Choir Rocks!</h1>
         </div>
       </div>
       <div style={{ height: "20px", backgroundColor: "black" }}></div>
