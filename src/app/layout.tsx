@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import layout from "./layout.module.scss";
 import Nav from "./_components/Nav/Nav";
+import { classNames } from "./_utils/classnames";
+import keepOnTruckin from "../../public/font/font";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +21,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <header className={layout.header}>
+          <div className={layout.skullOverlay}></div>
+          <div className={classNames(keepOnTruckin.className, layout.hero)}>
+            <h1>My Choir Rocks!</h1>
+          </div>
+        </header>
         <Nav />
         <main>
           {children}

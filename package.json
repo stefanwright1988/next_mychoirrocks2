@@ -9,8 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@measured/puck": "^0.15.0",
-    "framer-motion": "^11.2.13",
     "next": "14.2.4",
     "react": "^18",
     "react-dom": "^18"
